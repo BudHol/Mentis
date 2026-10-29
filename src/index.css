@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --paper: #fbfbf9;
+    --paper-subtle: #f6f5f0;
+    --paper-border: #e8e5de;
+    --paper-line: #dcd8cf;
+    --ink: #1e232a;
+    --ink-muted: #687280;
+    --amber: #c58940;
+    --amber-soft: #fbf6ee;
+    --indigo: #3f51b5;
+  }
+
+  html,
+  body,
+  #root {
+    min-height: 100%;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: var(--ink);
+    background-color: var(--paper);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'DM Mono', monospace;
+  }
+
+  button,
+  a,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  ::selection {
+    background: #f6dfb8;
+    color: #6b431b;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #d8d4ca;
+    border-radius: 999px;
+  }
+}
+
+@layer components {
+  .notebook-rule {
+    background-color: var(--paper);
+    background-image: radial-gradient(#d6d1c6 0.75px, transparent 0.75px);
+    background-size: 20px 20px;
+  }
+
+  .font-serif {
+    font-family: 'Newsreader', Georgia, serif;
+  }
+
+  .studio-card {
+    border-color: var(--paper-border);
+    box-shadow: 0 1px 2px rgb(30 35 42 / 4%);
+  }
+}
+
+/* Keep older feature components on the same studio palette while they are
+   reused across the workspace. */
+.text-slate-900,
+.text-slate-800,
+.text-slate-700 {
+  color: var(--ink);
+}
+
+.text-slate-600,
+.text-slate-500,
+.text-slate-400 {
+  color: var(--ink-muted);
+}
+
+.bg-slate-50,
+.bg-slate-50\/50,
+.bg-slate-100 {
+  background-color: var(--paper-subtle);
+}
+
+.bg-slate-900 {
+  background-color: var(--ink);
+}
+
+.border-slate-100,
+.border-slate-200,
+.border-slate-300 {
+  border-color: var(--paper-border);
+}
+
+.text-indigo-600,
+.text-indigo-700,
+.text-blue-600,
+.text-blue-700 {
+  color: #8a5a25;
+}
+
+.bg-indigo-50,
+.bg-blue-50 {
+  background-color: var(--amber-soft);
+}
+
+.border-indigo-100,
+.border-indigo-200,
+.border-blue-100,
+.border-blue-200 {
+  border-color: #eed9be;
+}
