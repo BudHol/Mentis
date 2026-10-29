@@ -4,6 +4,8 @@ A browser-based study workspace with Socratic and Personal Assistant modes,
 local lecture indexing, contextual tutoring, interactive visual study aids, and
 document exports.
 
+![Mentis workspace](./docs/mentis-workspace.png)
+
 The chat composer includes a Create document menu for downloading the latest
 response, the full conversation, or an AI-generated study guide as a formatted
 DOCX file. Documents are rendered locally with headings, colored accents,
