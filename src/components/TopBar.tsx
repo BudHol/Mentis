@@ -26,9 +26,9 @@ export const TopBar: React.FC<TopBarProps> = ({
           className="text-[15px] font-semibold tracking-tight text-[#1E232A] whitespace-nowrap shrink-0 hover:text-[#2D343E] transition-colors flex items-center gap-2"
         >
           <span className="flex h-8 w-8 items-center justify-center rounded-md bg-[#1E232A] text-[#FBF6EE] font-serif font-bold text-sm tracking-wide shadow-xs border border-[#2D343E]">
-            PT
+            M
           </span>
-          <span>My Personal Tutor</span>
+          <span>Mentis</span>
         </a>
       </div>
 

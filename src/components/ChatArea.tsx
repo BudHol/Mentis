@@ -132,7 +132,7 @@ export const ChatArea: React.FC<ChatAreaProps> = ({
             >
               {!isUser && (
                 <div className="flex h-8 w-8 shrink-0 select-none items-center justify-center rounded-lg bg-[#1E232A] text-[#FBF6EE] font-serif font-bold text-xs shadow-xs mt-0.5 border border-[#2D343E]">
-                  PT
+                  M
                 </div>
               )}
 

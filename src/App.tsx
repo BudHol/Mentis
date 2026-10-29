@@ -434,7 +434,7 @@ Here is a progressive Socratic Hint Ladder to guide your thinking step-by-step:`
     const selectedMessages = kind === 'latest'
       ? [assistantMessages[assistantMessages.length - 1]]
       : messages.filter((message) => message.text.trim());
-    const title = kind === 'latest' ? 'Tutor response' : 'My Personal Tutor conversation';
+    const title = kind === 'latest' ? 'Tutor response' : 'Mentis conversation';
     await downloadTutorDocument(
       documentFromMessages(title, selectedMessages, uniqueSources),
       kind === 'latest' ? 'my-personal-tutor-response.docx' : 'my-personal-tutor-conversation.docx',

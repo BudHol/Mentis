@@ -111,7 +111,7 @@ export async function generateConceptVisual(
         Authorization: 'Bearer ' + apiKey,
         'Content-Type': 'application/json',
         'HTTP-Referer': window.location.origin,
-        'X-Title': 'My Personal Tutor',
+        'X-Title': 'Mentis',
       },
       body: JSON.stringify({
         model,
@@ -162,7 +162,7 @@ function buildSystemPrompt(mode: TutorMode, ragChunks: RagChunk[]): string {
         .join('\n')}`
     : '\nNo lecture passages were retrieved for this question. Do not claim that a file was uploaded unless context is provided.';
 
-  return `You are My Personal Tutor, a careful AI study companion. The active interaction style is ${mode === 'socratic' ? 'Socratic Tutor' : 'Personal Assistant'}.
+  return `You are Mentis, a careful AI study companion. The active interaction style is ${mode === 'socratic' ? 'Socratic Tutor' : 'Personal Assistant'}.
 ${strategy}
 Prefer concise explanations, concrete intuition, and correct mathematics. If the lecture context does not contain the answer, say so instead of inventing a citation.
 ${context}
@@ -215,7 +215,7 @@ export async function streamTutorResponse(
         Authorization: `Bearer ${apiKey}`,
         'Content-Type': 'application/json',
         'HTTP-Referer': window.location.origin,
-        'X-Title': 'My Personal Tutor',
+        'X-Title': 'Mentis',
       },
       body: JSON.stringify({
         model,

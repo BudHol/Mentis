@@ -1,5 +1,5 @@
 {
-  "name": "My Personal Tutor",
+  "name": "Mentis",
   "description": "Socratic AI study companion with lecture PDF ingestion, RAG context retrieval, and dual learning and assignment modes.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]

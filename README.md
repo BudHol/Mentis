@@ -1,4 +1,4 @@
-# My Personal Tutor
+# Mentis
 
 A browser-based study workspace with Socratic and Personal Assistant modes,
 local lecture indexing, contextual tutoring, interactive visual study aids, and

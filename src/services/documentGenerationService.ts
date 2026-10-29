@@ -85,7 +85,7 @@ function createLocalStudyGuide(messages: Message[], ragChunks: RagChunk[]): Tuto
     .map((message) => message.text.trim());
 
   return {
-    title: 'Personal Tutor Study Guide',
+    title: 'Mentis Study Guide',
     subtitle: 'Generated from this conversation',
     sections: [
       {
@@ -126,7 +126,7 @@ export async function generateStudyGuide(
       Authorization: `Bearer ${apiKey}`,
       'Content-Type': 'application/json',
       'HTTP-Referer': window.location.origin,
-      'X-Title': 'My Personal Tutor',
+      'X-Title': 'Mentis',
     },
     body: JSON.stringify({
       model,
